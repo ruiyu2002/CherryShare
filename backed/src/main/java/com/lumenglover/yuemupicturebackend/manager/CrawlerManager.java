@@ -92,7 +92,7 @@ public class CrawlerManager {
         String identifier;
 
         try {
-            loginUser = userService.getLoginUser(request);
+            loginUser = userService.isLogin(request);
             if (loginUser != null) {
                 Long loginUserId = loginUser.getId();
                 identifier = String.valueOf(loginUserId);
